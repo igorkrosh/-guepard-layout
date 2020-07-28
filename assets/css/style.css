@@ -1,0 +1,264 @@
+body
+{
+    font-family: Gilroy;
+}
+
+a
+{
+    color: initial;
+}
+
+a:hover
+{
+    text-decoration: initial;
+    color: initial;
+}
+
+button, button:focus
+{
+    outline: none!important;
+    box-shadow: none;
+}
+
+.btn-gold
+{
+    background: linear-gradient(90deg, rgba(212,139,61,1) 0%, rgba(232,174,112,1) 50%, rgba(212,139,61,1) 100%);
+    border: none;
+    padding: 10px 40px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 0px 0px 10px rgba(212,139,61,1);
+    transition: 0.5s;
+}
+
+.btn-gold:hover
+{
+    box-shadow: 0px 0px 15px rgba(212,139,61,1);
+}
+
+.navbar
+{
+    padding-top: 0;
+    padding-bottom: 0;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+.navbar .container 
+{
+    justify-content: center;
+}
+
+.navbar .navbar-brand, .navbar .contacts-phone
+{
+    margin-right: auto;
+}
+
+.contacts-phone
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    padding-left: 45px;
+    position: relative;
+    padding-right: 80px;
+}
+
+.contacts-phone::after
+{
+    content: url(../images/icons/phone.png);
+    position: absolute;
+    left: 0;
+    top: 25%;    
+}
+
+.contacts-phone a
+{
+    color: white;
+}
+
+.vercital-slider
+{
+    height: 650px;
+    background: url(../images/bg.jpg) no-repeat;
+    background-size: cover;
+    
+}
+
+.vercital-slider .slide-description
+{
+    padding-top: 200px;
+    color: white;
+    width: 500px;
+    height: 650px;
+    
+}
+
+.vercital-slider .slide-description h1
+{
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 70px;
+}
+
+.vercital-slider .slide-description h1 span
+{
+    font-size: 47px;
+    display: block;
+}
+
+.vercital-slider .slide-description ul
+{
+    list-style: none;
+    margin-top: 40px;
+    position: relative;
+}
+
+.vercital-slider .slide-description ul::after
+{
+    content: "";
+    height: 1px;
+    width: 50vw;
+    position: absolute;
+    left: 0;
+    top: 15px;
+    background-color: #dcb86e;
+    transform: translateX(-100%);
+}
+
+.vercital-slider .slide-description ul li
+{
+    font-size: 21px;
+    font-weight: 200;
+    padding-bottom: 5px;
+}
+
+.vercital-slider .slide-description .btn-gold
+{
+    margin-left: 40px;
+}
+
+.vercital-slider .slide-item-wrapper
+{
+    margin-left: auto;
+    width: 310px;
+    height: 650px;
+    margin-right: 80px;
+}
+
+.vercital-slider .slide-item-wrapper .slide-item
+{
+    height: 550px;
+    position: relative;
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+
+.vercital-slider .slide-item-wrapper .slide-item.slick-active
+{
+    filter: none;
+}
+
+
+
+.vercital-slider-wrapper
+{
+    display: flex;
+    position: relative;
+}
+
+.image-pattern
+{
+   
+    margin-top: -150px;
+}
+
+.slick-list
+{
+    height: 100%!important;
+}
+
+.slide-nav
+{
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    bottom: 0;
+}
+
+.slide-nav:after
+{
+    content: "";
+    position: absolute;
+    top: -15px;
+    transform: translateY(-100%);
+    width: 2px;
+    height: 100vh;
+    background-color: #d48b3d;
+
+}
+
+.slide-nav .btn
+{
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    background: url(../images/icons/slide-nav-bg.png) no-repeat;
+    background-size: cover;
+    transition: 0.5s;
+    margin-bottom: 15px;
+    position: relative;
+    outline: none;
+    
+}
+
+.slide-nav .btn:focus
+{
+    outline: none;
+    box-shadow: none;
+}
+
+.slide-nav .btn::after
+{
+    content: url(../images/icons/slide-nav-arrow.png);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+}
+
+.slide-nav .btn:hover::after
+{
+    content: url(../images/icons/slide-nav-arrow-big.png);
+}
+
+.slide-nav .btn.btn-next::after
+{
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.slide-nav .btn:hover
+{
+    background: rgba(0,0,0,0);
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    border: 2px solid #d48b3d;
+}
+
+.vercital-slider .slide-description-wrapper
+{
+    height: 650px;
+}
+
