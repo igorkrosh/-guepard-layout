@@ -779,3 +779,63 @@ button, button:focus
     font-size: 16px;
     font-weight: 500;
 }
+
+.director
+{
+    padding-top: 90px;
+    color: black;
+}
+
+.director .col-guepard
+{
+    padding-left: 90px;
+    padding-right: 90px;
+    position: relative;
+}
+
+.director .col-guepard h1
+{
+    font-size: 60px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.director .col-guepard h2
+{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.director .guepard-text
+{
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+.director .guepard-text i
+{
+    display: block;
+    margin-bottom: 40px;
+}
+
+.director .guepard-director
+{
+    font-weight: 900;
+}
+
+.director .col-guepard:after
+{
+    content: url(../images/icons/kovichka.png);
+    position: absolute;
+    left: 0;
+    top: 150px;
+}
+
+.director .col-guepard:before
+{
+    content: url(../images/icons/kovichka.png);
+    position: absolute;
+    transform: rotate(180deg);
+    right: 20px;
+    bottom: 150px;
+}
