@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/nouislider.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/fonts/stylesheet.css">
+    <link rel="stylesheet" href="assets/css/jquery.scrollbar.css">
 </head>
 <body>
     <header>
@@ -97,12 +99,408 @@
             </div>
         </div>
     </section>
+    <section class="our-objects">
+        <div class="container">
+            <h1 class="title">Наши объекты</h1>
+            <div class="type-of-area">
+                <button class="area">
+                    <div>Торговые помещения</div>
+                    <img src="assets/images/area/1.jpg" alt="">
+                </button>
+                <button class="area">
+                    <img src="assets/images/area/2.jpg" alt="">
+                    <div>Офисы</div>
+                </button>
+                <button class="area">
+                    <img src="assets/images/area/3.jpg" alt="">
+                    <div>Свободное назначение</div>
+                </button>
+                <button class="area">
+                    <img src="assets/images/area/4.jpg" alt="">
+                    <div>Склады</div>
+                </button>
+            </div>
+            <div class="filter">
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownTypeOfArea" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Вид площади
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownTypeOfArea">
+                      <a class="dropdown-item" href="#">type 1</a>
+                      <a class="dropdown-item" href="#">type 2</a>
+                      <a class="dropdown-item" href="#">type 3</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownTypeOfArea" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Площадь
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownTypeOfArea">
+                      <a class="dropdown-item" href="#">type 1</a>
+                      <a class="dropdown-item" href="#">type 2</a>
+                      <a class="dropdown-item" href="#">type 3</a>
+                    </div>
+                </div>
+                
+                <div class="form-group-range">
+                    <span>833 985 p.</span>
+                    <div id="slider"></div>
+                    <span>89 133 985 p.</span>
+                </div>
+                <button class="btn-gold btn-filter" data-toggle="list" href="#list-area-items" role="tab">!Посмотреть площади</button>
+            </div>
 
+            <div class="tab-wrapper">   
+
+                <div class="external-scroll_y">
+                    <div class="scroll-element_outer">
+                        <div class="scroll-element_size"></div>
+                        <div class="scroll-element_track"></div>
+                        <div class="scroll-bar"></div>
+                    </div>
+                </div>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane tab-objects fade show active" id="list-home" role="tabpanel">
+                        <div class="object-item">
+                            <div class="object-image">
+                                <img src="assets/images/objects/cube.jpg" alt="">
+                                <div class="object-title">
+                                    <h1>ТЦ и БЦ Куб</h1>
+                                    <span>Нижний Новгород, Полтавская улица, 30</span>
+                                </div>
+                            </div>
+                            <div class="object-description">
+                                <div class="object-property">
+                                    <div class="left-side">
+                                        <span>Общая площадь:</span>
+                                    </div>
+                                    <div class="right-side">
+                                        <span>14 500 кв.м,</span> 
+                                    </div>
+                                </div>
+                                <div class="object-property">
+                                    <div class="left-side">
+                                        <span>Назначение объекта:</span>
+                                    </div>
+                                    <div class="right-side">
+                                        <span>10 000кв. м - торговые площади,</span> 
+                                        <span>4500кв. м - офисные помещения</span> 
+                                    </div>
+                                </div>
+                                <div class="object-property">
+                                    <div class="left-side">
+                                        <span>Этажность:</span>
+                                    </div>
+                                    <div class="right-side">
+                                        <span>4 этажа</span> 
+                                    </div>
+                                </div>
+                                <div class="object-property">
+                                    <div class="left-side">
+                                        <span>Посещаемость:</span>
+                                    </div>
+                                    <div class="right-side">
+                                        <span>от 9000 чел. в день</span> 
+                                    </div>
+                                </div>
+                                <div class="object-property">
+                                    <div class="left-side">
+                                        <span>Якорные арендаторы:</span>
+                                    </div>
+                                    <div class="right-side">
+                                        <span>Пяторочка, ТД Верес, Метрофитнес, Велострана.</span> 
+                                    </div>
+                                </div>
+                                <button class="btn-gold sm" data-toggle="list" href="#list-area-items" role="tab">Посмотреть площади</button>
+                            </div>
+                        </div>
+                        <div class="object-item">
+                            <div class="object-image">
+                                <img src="assets/images/objects/cube.jpg" alt="">
+                                <div class="object-title">
+                                    <h1>ТЦ и БЦ Куб</h1>
+                                    <span>Нижний Новгород, Полтавская улица, 30</span>
+                                </div>
+                            </div>
+                            <div class="object-description">
+                                <div class="object-property">
+                                    <div class="left-side">
+                                        <span>Общая площадь:</span>
+                                    </div>
+                                    <div class="right-side">
+                                        <span>14 500 кв.м,</span> 
+                                    </div>
+                                </div>
+                                <div class="object-property">
+                                    <div class="left-side">
+                                        <span>Назначение объекта:</span>
+                                    </div>
+                                    <div class="right-side">
+                                        <span>10 000кв. м - торговые площади,</span> 
+                                        <span>4500кв. м - офисные помещения</span> 
+                                    </div>
+                                </div>
+                                <div class="object-property">
+                                    <div class="left-side">
+                                        <span>Этажность:</span>
+                                    </div>
+                                    <div class="right-side">
+                                        <span>4 этажа</span> 
+                                    </div>
+                                </div>
+                                <div class="object-property">
+                                    <div class="left-side">
+                                        <span>Посещаемость:</span>
+                                    </div>
+                                    <div class="right-side">
+                                        <span>от 9000 чел. в день</span> 
+                                    </div>
+                                </div>
+                                <div class="object-property">
+                                    <div class="left-side">
+                                        <span>Якорные арендаторы:</span>
+                                    </div>
+                                    <div class="right-side">
+                                        <span>Пяторочка, ТД Верес, Метрофитнес, Велострана.</span> 
+                                    </div>
+                                </div>
+                                <button class="btn-gold sm" data-toggle="list" href="#list-area-items" role="tab">Посмотреть площади</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="tab-pane tab-area fade" id="list-area-items" role="tabpanel">
+                        <div class="scrollbar-outer">
+                            <div class="area-item">
+                                <div class="image-wrapper">
+                                    <div class="image">
+                                        <img src="assets/images/area-items/1/1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="preview-wrapper">
+                                    <button class="preview-image">
+                                        <img src="assets/images/area-items/1/1.png" alt="">
+                                    </button>
+                                    <button class="preview-image">
+                                        <img src="assets/images/area-items/1/2.jpg" alt="">
+                                    </button>                                
+                                    <button class="preview-image">
+                                        <img src="assets/images/area-items/1/3.jpg" alt="">
+                                    </button>                                
+                                    <button class="preview-image">
+                                        <img src="assets/images/area-items/1/4.jpg" alt="">
+                                    </button>                                
+                                    <button class="preview-image">
+                                        <img src="assets/images/area-items/1/2.jpg" alt="">
+                                    </button>                               
+                                </div>
+                                
+                                <div class="area-description">  
+                                    <div class="object-description">
+                                        <h1 class="area-title">ТЦ Куб 12.5 м²</h1>
+                                        <div class="object-property">
+                                            <div class="left-side">
+                                                <span>Класс</span>
+                                            </div>
+                                            <div class="right-side">
+                                                <span>А</span> 
+                                            </div>
+                                        </div>
+                                        <div class="object-property">
+                                            <div class="left-side">
+                                                <span>Этаж</span>
+                                            </div>
+                                            <div class="right-side">
+                                                <span>5</span> 
+                                            </div>
+                                        </div>
+                                        <div class="object-property">
+                                            <div class="left-side">
+                                                <span>Потолки</span>
+                                            </div>
+                                            <div class="right-side">
+                                                <span>5м</span> 
+                                            </div>
+                                        </div>
+                                        <div class="object-property">
+                                            <div class="left-side">
+                                                <span>Состояние</span>
+                                            </div>
+                                            <div class="right-side">
+                                                <span>Типовой ремонт</span> 
+                                            </div>
+                                        </div>
+                                        <div class="object-property">
+                                            <div class="left-side">
+                                                <span>Стоимость</span>
+                                            </div>
+                                            <div class="right-side">
+                                                <span>72 000 р./мес.</span> 
+                                            </div>
+                                        </div>
+                                        <button class="btn-gold sm" data-toggle="list" href="#list-area-items" role="tab">Забронировать</button>
+                                        <a class="btn-gold sm border-gold" data-toggle="list" href="#list-area-items" role="tab">+7 (831) 461-82-10</a>
+                                    </div>
+                                </div>                        
+                            </div>
+                            <div class="area-item">
+                                <div class="image-wrapper">
+                                    <div class="image">
+                                        <img src="assets/images/area-items/1/1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="preview-wrapper">
+                                    <button class="preview-image">
+                                        <img src="assets/images/area-items/1/1.png" alt="">
+                                    </button>
+                                    <button class="preview-image">
+                                        <img src="assets/images/area-items/1/2.jpg" alt="">
+                                    </button>                                
+                                    <button class="preview-image">
+                                        <img src="assets/images/area-items/1/3.jpg" alt="">
+                                    </button>                                
+                                    <button class="preview-image">
+                                        <img src="assets/images/area-items/1/4.jpg" alt="">
+                                    </button>                                
+                                    <button class="preview-image">
+                                        <img src="assets/images/area-items/1/2.jpg" alt="">
+                                    </button>                               
+                                </div>
+                                
+                                <div class="area-description">  
+                                    <div class="object-description">
+                                        <h1 class="area-title">ТЦ Куб 12.5 м²</h1>
+                                        <div class="object-property">
+                                            <div class="left-side">
+                                                <span>Класс</span>
+                                            </div>
+                                            <div class="right-side">
+                                                <span>А</span> 
+                                            </div>
+                                        </div>
+                                        <div class="object-property">
+                                            <div class="left-side">
+                                                <span>Этаж</span>
+                                            </div>
+                                            <div class="right-side">
+                                                <span>5</span> 
+                                            </div>
+                                        </div>
+                                        <div class="object-property">
+                                            <div class="left-side">
+                                                <span>Потолки</span>
+                                            </div>
+                                            <div class="right-side">
+                                                <span>5м</span> 
+                                            </div>
+                                        </div>
+                                        <div class="object-property">
+                                            <div class="left-side">
+                                                <span>Состояние</span>
+                                            </div>
+                                            <div class="right-side">
+                                                <span>Типовой ремонт</span> 
+                                            </div>
+                                        </div>
+                                        <div class="object-property">
+                                            <div class="left-side">
+                                                <span>Стоимость</span>
+                                            </div>
+                                            <div class="right-side">
+                                                <span>72 000 р./мес.</span> 
+                                            </div>
+                                        </div>
+                                        <button class="btn-gold sm" data-toggle="list" href="#list-area-items" role="tab">Забронировать</button>
+                                        <a class="btn-gold sm border-gold" data-toggle="list" href="#list-area-items" role="tab">+7 (831) 461-82-10</a>
+                                    </div>
+                                </div>                        
+                            </div>
+                            <div class="area-item">
+                                <div class="image-wrapper">
+                                    <div class="image">
+                                        <img src="assets/images/area-items/1/1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="preview-wrapper">
+                                    <button class="preview-image">
+                                        <img src="assets/images/area-items/1/1.png" alt="">
+                                    </button>
+                                    <button class="preview-image">
+                                        <img src="assets/images/area-items/1/2.jpg" alt="">
+                                    </button>                                
+                                    <button class="preview-image">
+                                        <img src="assets/images/area-items/1/3.jpg" alt="">
+                                    </button>                                
+                                    <button class="preview-image">
+                                        <img src="assets/images/area-items/1/4.jpg" alt="">
+                                    </button>                                
+                                    <button class="preview-image">
+                                        <img src="assets/images/area-items/1/2.jpg" alt="">
+                                    </button>                               
+                                </div>
+                                
+                                <div class="area-description">  
+                                    <div class="object-description">
+                                        <h1 class="area-title">ТЦ Куб 12.5 м²</h1>
+                                        <div class="object-property">
+                                            <div class="left-side">
+                                                <span>Класс</span>
+                                            </div>
+                                            <div class="right-side">
+                                                <span>А</span> 
+                                            </div>
+                                        </div>
+                                        <div class="object-property">
+                                            <div class="left-side">
+                                                <span>Этаж</span>
+                                            </div>
+                                            <div class="right-side">
+                                                <span>5</span> 
+                                            </div>
+                                        </div>
+                                        <div class="object-property">
+                                            <div class="left-side">
+                                                <span>Потолки</span>
+                                            </div>
+                                            <div class="right-side">
+                                                <span>5м</span> 
+                                            </div>
+                                        </div>
+                                        <div class="object-property">
+                                            <div class="left-side">
+                                                <span>Состояние</span>
+                                            </div>
+                                            <div class="right-side">
+                                                <span>Типовой ремонт</span> 
+                                            </div>
+                                        </div>
+                                        <div class="object-property">
+                                            <div class="left-side">
+                                                <span>Стоимость</span>
+                                            </div>
+                                            <div class="right-side">
+                                                <span>72 000 р./мес.</span> 
+                                            </div>
+                                        </div>
+                                        <button class="btn-gold sm" data-toggle="list" href="#list-area-items" role="tab">Забронировать</button>
+                                        <a class="btn-gold sm border-gold" data-toggle="list" href="#list-area-items" role="tab">+7 (831) 461-82-10</a>
+                                    </div>
+                                </div>                        
+                            </div>
+                        </div>
+
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </section>
 
     <script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/nouislider.min.js"></script>
+    <script src="assets/js/jquery.scrollbar.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
