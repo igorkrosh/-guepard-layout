@@ -3,6 +3,7 @@ $(document).ready(function () {
     SetAreaItemsSlick()
     SetBtnPreviewImage()
     SetScrollBar()
+    SetPlusesSlick()
 
     noUiSlider.create(document.getElementById('slider'), {
         start: [0, 100],
@@ -12,17 +13,6 @@ $(document).ready(function () {
             'max': 100
         }
     });
-
-    $('button[data-toggle="list"]').on('shown.bs.tab', function (e) {
-        if ($(e.target).attr('href') == '#list-area-items')
-        {
-            $('.external-scroll_y').addClass('active')
-        }
-        else
-        {
-            $('.external-scroll_y').removeClass('active')
-        }
-      })
 })
 
 function SetVerticalSlider()
@@ -109,6 +99,25 @@ function SetScrollBar()
         "autoScrollSize": false,
         //"scrollx": $('.external-scroll_x'),
         "scrolly": $('.external-scroll_y')
-        
     });
+
+    $('button[data-toggle="list"]').on('shown.bs.tab', function (e) {
+        if ($(e.target).attr('href') == '#list-area-items')
+        {
+            $('.external-scroll_y').addClass('active')
+        }
+        else
+        {
+            $('.external-scroll_y').removeClass('active')
+        }
+    })
+}
+
+function SetPlusesSlick()
+{
+    $('.pluses-slick').slick({
+        rows: 2,
+        slidesToShow: 3,
+        adaptiveHeight: true
+    })
 }
