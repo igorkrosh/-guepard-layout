@@ -6,6 +6,10 @@ $(document).ready(function () {
     SetPlusesSlick()
     SetNavbar()
 
+    //SetModalOut()
+
+    SetAncors()
+
     noUiSlider.create(document.getElementById('slider'), {
         start: [0, 100],
         connect: true,
@@ -137,5 +141,27 @@ function SetNavbar()
         {
             $('.navbar.always-top').removeClass('active')
         }
+    })
+}
+
+function SetModalOut()
+{
+    $(document).mouseleave(function(e){
+        $('#leaveModal').modal('show')
+    });
+
+    $('#leaveModal .btn-gold').on('click', function() {
+        $('#leaveModal').modal('hide')
+    })
+}
+
+function SetAncors()
+{
+    $('[ancor]').on('click', function () {
+        window.scrollTo({
+            top: $($(this).attr('ancor')).position().top - 100,
+            left: 0,
+            behavior: 'smooth'
+        });
     })
 }
