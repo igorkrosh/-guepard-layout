@@ -206,7 +206,8 @@ button, button:focus
 
 .vercital-slider .slide-item-wrapper .slide-item
 {
-    height: 550px;
+    /*height: 550px;*/
+    width: 310px!important;
     position: relative;
     filter: grayscale(100%);
     transition: 0.5s;
@@ -227,7 +228,7 @@ button, button:focus
 
 .image-pattern
 {
-   
+   padding-bottom: 50px;
     margin-top: -150px;
 }
 
@@ -309,6 +310,16 @@ button, button:focus
     height: 55px;
     border-radius: 100%;
     border: 2px solid #d48b3d;
+}
+
+.vercital-slider .slide-item-wrapper .image-pattern img
+{
+    width: 310px;
+    height: 650px;
+    -webkit-clip-path: url(#my-clip-path);
+    clip-path: url(#my-clip-path);
+    object-fit: cover;
+    margin-bottom: 25px;
 }
 
 .vercital-slider .slide-description-wrapper
@@ -1002,4 +1013,24 @@ footer .salut-promo
 {
     width: 630px;
     max-width: 630px;
+}
+
+.slick-dots li button:before
+{
+    font-size: 12px;
+    color: white;
+    opacity: 1;
+}
+
+.slick-dots li.slick-active button:before
+{
+    opacity: 1;
+    color: #d48b3d;
+}
+
+.svg
+{
+    position: absolute;
+    pointer-events: none;
+    left: -500px;
 }

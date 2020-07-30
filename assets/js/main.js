@@ -32,7 +32,8 @@ function SetVerticalSlider()
         nextArrow: '<button id="next" type="button" class="btn btn-next"></button>',
         asNavFor: '.slide-description-wrapper',
         focusOnSelect: true,
-        autoplay: true,
+        
+        //autoplay: true,
         //centerMode: true,
         //infinite: true,
         //variableWidth: true
@@ -44,11 +45,19 @@ function SetVerticalSlider()
         slidesToScroll: 1,
         arrows: false,
         draggable: false,
-        asNavFor: '.slide-item-wrapper'
+        asNavFor: '.slide-item-wrapper',
+        responsive: [
+            {
+                breakpoint: 992,
+                settings:
+                {
+                    //variableWidth: true,
+                }
+
+            }
+        ]
     })
 }
-
-
 
 function SetAreaItemsSlick()
 {
@@ -62,6 +71,16 @@ function SetAreaItemsSlick()
         arrows: false,
         autoplay: true,
         centerMode: true,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings:
+                {
+                    slidesToShow: 2,
+                }
+
+            }
+        ]
         //autoplaySpeed: 5000,
     }).on('afterChange', function() {
         //console.log($(this))
@@ -123,7 +142,22 @@ function SetPlusesSlick()
     $('.pluses-slick').slick({
         rows: 2,
         slidesToShow: 3,
-        adaptiveHeight: true
+        adaptiveHeight: true,
+        infinite: false,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings:
+                {
+                    dots:true,
+                    slidesToShow: 2,
+                    
+                    
+                }
+
+            }
+        ]
     })
 }
 

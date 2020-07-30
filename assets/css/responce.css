@@ -1,0 +1,298 @@
+@media(max-width: 1200px)
+{
+    .vercital-slider .slide-description h1
+    {
+        font-size: 50px;
+    }
+
+    .vercital-slider .slide-description ul li
+    {
+        font-size: 18px;
+    }
+
+    .vercital-slider .slide-description
+    {
+        padding-top: 100px;
+    }
+
+    .navbar:not(.always-top) .contacts-phone
+    {
+        padding-right: 255px;
+    }
+
+    .area
+    {
+        width: 215px;
+        height: 100px;
+    }
+
+    .area div
+    {
+        font-size: 15px;
+    }
+
+    .filter .dropdown .btn
+    {
+        font-size: 14px;
+    }
+
+    .form-group-range span
+    {
+        font-size: 14px;
+    }
+
+    .filter .btn-gold
+    {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .filter
+    {
+        padding: 10px;
+    }
+
+    .area-item .image-wrapper .image
+    {
+        width: 420px!important;
+    }
+
+    .area-description .object-description
+    {
+        padding: 25px 15px;
+        margin-right: 25px;
+    }
+
+    .area-item .btn-gold
+    {
+        padding: 10px 15px;
+    }
+
+    .plus-item
+    {
+        height: 335px;
+    }
+
+    .col-image
+    {
+        display: flex;
+    }
+
+    .col-image img
+    {
+        width: 100%;
+    }
+
+    
+}
+
+@media(max-width: 992px)
+{
+    .vercital-slider .slide-description h1, .vercital-slider .slide-description h1 span
+    {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .vercital-slider .slide-description
+    {
+        width: 300px!important;        
+    }
+    .vercital-slider .slide-description .btn-gold
+    {
+        margin-left: 0;
+    }
+
+    .vercital-slider .slide-description
+    {
+        padding-top: 120px;
+    }
+
+    .vercital-slider .slide-description h1, .vercital-slider .slide-description h1 span
+    {
+        font-size: 30px;
+    }
+
+    .vercital-slider .slide-description ul
+    {
+        padding-left: 0;
+    }
+
+    .vercital-slider .slide-item-wrapper .image-pattern img
+    {
+        width: 210px;
+        height: 550px;
+    }
+
+    .vercital-slider .slide-item-wrapper .slide-item
+    {
+        width: 210px!important;
+        
+    }
+    .vercital-slider .slide-item-wrapper
+    {
+        margin-right: 0;
+    }
+
+    .navbar:not(.always-top) .contacts-phone
+    {
+        padding-right: 280px;
+    }
+
+    .contacts-phone a
+    {
+        font-size: 16px;
+    }
+
+    .area
+    {
+        margin: 15px;
+        width: 270px;
+        height: 150px;
+    }
+
+    .type-of-area
+    {
+        justify-content: space-evenly;
+    }
+
+    .filter
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .filter .btn-gold
+    {
+        margin-left: 20px;
+    }
+
+    .object-item .object-image
+    {
+        height: 190px;
+    }
+    .object-description
+    {
+        padding: 35px 15px;
+    }
+
+    .area-item .image-wrapper .image
+    {
+        width: 300px!important;
+    }
+
+    .area-description .object-description
+    {
+        margin-right: 0;
+    }
+
+    .area-item .btn-gold
+    {
+        font-size: 12px;
+    }
+
+    .area-description .object-description
+    {
+        padding: 25px 5px;
+    }
+
+    .area-item .btn-gold.border-gold
+    {
+        margin-left: 0;
+    }
+
+    .area-description .object-property .left-side, .area-description .object-property .right-side
+    {
+        font-size: 14px;
+    }
+    .area-description .object-property
+    {
+        margin-bottom: 10px;
+    }
+
+    .area-item
+    {
+        height: 300px;
+    }
+
+    .area-item .slick-list
+    {
+        height: 100%!important;
+    }
+
+    .scrollbar-outer
+    {
+        height: 650px;
+    }
+
+    .external-scroll_y.scroll-scrolly_visible
+    {
+        height: 515px;
+    }
+
+    .plus-description
+    {
+        font-size: 14px;
+    }
+
+    .plus-item
+    {
+        padding: 35px 15px;
+    }
+
+    .vercital-slider .slide-item-wrapper
+    {
+        width: auto;
+    }
+
+    .director .col-guepard
+    {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 25px;
+    }
+
+    .director .guepard-text
+    {
+        font-size: 16px;
+    }
+
+    .col-image img
+    {
+        object-fit: cover;
+    }
+
+    footer .container
+    {
+        flex-wrap: wrap;
+    }
+
+    footer .contacts-phone
+    {
+        padding-right: 25px;
+    }
+
+
+
+    footer .contacts-phone
+    {
+        flex-direction: row;
+        margin-top: 20px;
+    }
+
+    footer .contacts-phone a
+    {
+        margin: 0 10px;
+    }
+
+    footer .contacts-phone::after
+    {
+        top: -2px;
+    }
+
+    .salut-promo
+    {
+        margin-top: 20px;
+    }
+
+}
