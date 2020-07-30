@@ -1040,3 +1040,8 @@ footer .salut-promo
     pointer-events: none;
     left: -500px;
 }
+
+.tab-content
+{
+    overflow-x: hidden;
+}

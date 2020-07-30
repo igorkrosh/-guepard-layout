@@ -35,10 +35,11 @@ function SetVerticalSlider()
         rows: 0,
         responsive: [
             {
-                breakpoint: 768,
+                breakpoint: 769,
                 settings:
                 {
-                    centerMode: true
+                    centerMode: true,
+                    
                 }
             }
         ]
@@ -92,7 +93,7 @@ function SetAreaItemsSlick()
                 }
             },
             {
-                breakpoint: 768,
+                breakpoint: 769,
                 settings:
                 {
                     vertical: false,
@@ -184,7 +185,18 @@ function SetPlusesSlick()
                     autoplay: true,
                     
                 }
-
+            },
+            {
+                breakpoint: 576,
+                settings:
+                {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    rows: 1,
+                    arrows: false,
+                    autoplay: true,
+                    dots:true,
+                }
             }
         ]
     })
