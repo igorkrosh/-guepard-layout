@@ -839,3 +839,74 @@ button, button:focus
     right: 20px;
     bottom: 150px;
 }
+
+.we-buy
+{
+    padding: 90px;
+    background-color: white;
+    text-align: center;
+}
+
+.we-buy .title
+{
+    margin-bottom: 25px;
+}
+
+.we-buy h2
+{
+    margin-bottom: 25px;
+}
+
+footer
+{
+    background-color: white;
+    border: 1px solid #e6e6e6;
+}
+
+footer .container
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+footer .adress
+{
+    font-size: 16px;
+    padding-left: 25px;
+    position: relative;
+}
+
+footer .adress:after
+{
+    content: url(../images/icons/adress.png);
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+footer .contacts-phone a
+{
+    color: black;
+    font-size: 17px;
+}
+
+footer .contacts-phone
+{
+    padding-right: 0;
+    padding-left: 25px;
+}
+
+footer .contacts-phone::after
+{
+    content: url(../images/icons/phone-2.png);
+}
+
+footer .salut-promo
+{
+    border-bottom: 1px solid black;
+}
