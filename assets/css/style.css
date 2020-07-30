@@ -87,6 +87,31 @@ button, button:focus
     margin-right: auto;
 }
 
+.navbar.always-top
+{
+    position: fixed;
+    top: -100vh;
+    z-index: 15;
+    background-color: #1c1d1e;
+    border-bottom: 1px solid #c17f3a;
+    transition: 0.5s;
+}
+
+.navbar.always-top.active
+{
+    top: 0;
+}
+
+.navbar.always-top .navbar-brand img
+{
+    height: 70px;
+}
+
+.navbar.always-top .contacts-phone a
+{
+    font-size: 16px;
+}
+
 .contacts-phone
 {
     display: flex;

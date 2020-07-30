@@ -4,6 +4,7 @@ $(document).ready(function () {
     SetBtnPreviewImage()
     SetScrollBar()
     SetPlusesSlick()
+    SetNavbar()
 
     noUiSlider.create(document.getElementById('slider'), {
         start: [0, 100],
@@ -119,5 +120,22 @@ function SetPlusesSlick()
         rows: 2,
         slidesToShow: 3,
         adaptiveHeight: true
+    })
+}
+
+function SetNavbar()
+{
+    $(window).scroll(function () {
+        let scrollY = this.scrollY
+        let verticalSliderHeight = $('.vercital-slider')[0].scrollHeight;
+        
+        if (scrollY > verticalSliderHeight / 2)
+        {
+            $('.navbar.always-top').addClass('active')
+        }
+        else
+        {
+            $('.navbar.always-top').removeClass('active')
+        }
     })
 }
