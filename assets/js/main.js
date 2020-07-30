@@ -32,6 +32,16 @@ function SetVerticalSlider()
         nextArrow: '<button id="next" type="button" class="btn btn-next"></button>',
         asNavFor: '.slide-description-wrapper',
         focusOnSelect: true,
+        rows: 0,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings:
+                {
+                    centerMode: true
+                }
+            }
+        ]
         
         //autoplay: true,
         //centerMode: true,
@@ -46,6 +56,7 @@ function SetVerticalSlider()
         arrows: false,
         draggable: false,
         asNavFor: '.slide-item-wrapper',
+        rows: 0,
         responsive: [
             {
                 breakpoint: 992,
@@ -71,6 +82,7 @@ function SetAreaItemsSlick()
         arrows: false,
         autoplay: true,
         centerMode: true,
+        rows: 0,
         responsive: [
             {
                 breakpoint: 992,
@@ -78,12 +90,27 @@ function SetAreaItemsSlick()
                 {
                     slidesToShow: 2,
                 }
-
+            },
+            {
+                breakpoint: 768,
+                settings:
+                {
+                    vertical: false,
+                    verticalSwiping: false,
+                    adaptiveHeight: false,
+                    variableWidth: true,
+                    slidesToShow: 3,
+                    autoplay: true,
+                    centerMode: true,
+                    rows: 0,
+                    autoplaySpeed: 5000,
+                    infinite: true
+                }
             }
         ]
         //autoplaySpeed: 5000,
     }).on('afterChange', function() {
-        //console.log($(this))
+        console.log($(this))
         let currentSlide = $(this).find('.preview-image.slick-center')
         let imageSrc = $(currentSlide).find('img').attr('src')
         
@@ -152,7 +179,9 @@ function SetPlusesSlick()
                 {
                     dots:true,
                     slidesToShow: 2,
-                    
+                    slidesToScroll: 2,
+                    rows: 1,
+                    autoplay: true,
                     
                 }
 

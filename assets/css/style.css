@@ -316,10 +316,16 @@ button, button:focus
 {
     width: 310px;
     height: 650px;
-    -webkit-clip-path: url(#my-clip-path);
-    clip-path: url(#my-clip-path);
+    -webkit-clip-path: url(#image-clip);
+    clip-path: url(#image-clip);
     object-fit: cover;
     margin-bottom: 25px;
+}
+
+.vercital-slider .slide-item-wrapper .slick-current.slick-active .image-pattern img
+{
+    -webkit-clip-path: url(#image-active-clip);
+    clip-path: url(#image-active-clip);
 }
 
 .vercital-slider .slide-description-wrapper
